@@ -15,9 +15,7 @@ done
 echo 'enter git message'
 read message
 
-clear
-
-git commit -m ' $message '
+git commit -m 'file modified'
 
 git push
 
