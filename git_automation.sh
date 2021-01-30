@@ -2,7 +2,7 @@
 
 #User info: 
 #This script adds files to the local git repository and then pushes them to GitHub. The files in question 
-#have to be entered when the script is called and the user is then prompted for a commit message.
+#have to be entered when the script is called, a commit message 'file modified' is used. 
 
 
 clear
@@ -12,10 +12,11 @@ do
     git add $file
 done
 
-echo 'enter git message'
-read message
+clear
 
 git commit -m 'file modified'
+
+clear
 
 git push
 
